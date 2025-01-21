@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.container {
+  background-color: white;
+  margin: 6rem 6rem;
+  max-width: 1000px;
+  padding: 3.5rem;
+  border-radius: 20px;
+}
+ul,
+ol {
+  list-style-position: inside;
+}
+
+.cooking-list::marker {
+  color: aliceblue;
+}
+
+.image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.title-h {
+  margin-top: 2rem;
+  font-size: 52px;
+}
+
+.title-p {
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.time-block {
+  background-color: hsl(330, 100%, 98%);
+  margin-top: 2rem;
+  width: 100%;
+  min-height: auto;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.cooking-h1 {
+  color: hsl(332, 51%, 32%);
+  font-weight: bold;
+}
+
+.cooking-list li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.cooking-li {
+  margin-top: 1rem;
+}
+
+.cooking-li span {
+  font-weight: bold;
+}
+
+.ingredients {
+  margin-top: 2rem;
+}
+
+.ingredients-h {
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients-li {
+  margin-top: 1rem;
+}
+
+.ingredients-ul li::marker,
+.instructions-list li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.line {
+  width: 100%;
+  margin-top: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.instructions {
+  margin-top: 2rem;
+}
+
+.instructions-list {
+  margin-top: 1rem;
+}
+
+.instructions-li {
+  margin-top: 1rem;
+}
+
+.instructions-li span {
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
+.nutrition {
+  margin-top: 2rem;
+}
+
+.nutrition-text {
+  margin-top: 1rem;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.nutrition-table .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.nutrition-table .label {
+  text-align: left;
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.nutrition-table .value {
+  text-align: left;
+  flex: 1;
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .container .image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+}
