@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 450px;
+  height: auto;
+  width: min(100%, 450px);
+  background-color: #1b222c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.thank-u {
+  display: none;
+  max-width: 450px;
+  height: auto;
+  width: min(100%, 450px);
+  background-color: #1b222c;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.star-img {
+  padding: 1rem;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  border-radius: 50%;
+}
+
+.heading {
+  color: var(--White);
+  margin-top: 2rem;
+}
+
+.text {
+  color: var(--Light-grey);
+  margin-top: 1rem;
+}
+
+.rate {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rate button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  border: none;
+  color: var(--Light-grey);
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.rate button:hover {
+  background-color: var(--Orange);
+  color: var(--Very-Dark-Blue);
+}
+
+.rate button:active,
+.rate button:focus {
+  background-color: var(--White);
+  color: var(--Very-Dark-Blue);
+}
+
+.btn {
+  margin-top: 2rem;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--Orange);
+  border: none;
+  border-radius: 20px;
+  color: var(--Very-Dark-Blue);
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--White);
+}
+
+.rate-info {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--Dark-Blue);
+  color: var(--Orange);
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.thank-u-heading {
+  margin-top: 2rem;
+  color: var(--White);
+}
+
+.thank-u-text {
+  margin-top: 1rem;
+  color: var(--Light-grey);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .heading {
+    margin-top: 1rem;
+    font-size: 26px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 1.25rem;
+  }
+
+  .rate {
+    margin-top: 1.5rem;
+  }
+
+  .rate button {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .thank-u-text {
+    font-size: 14px;
+  }
+
+  .thank-u-heading {
+    font-size: 26px;
+  }
+
+  .rate-info {
+    font-size: 14px;
+  }
+}
