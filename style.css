@@ -112,10 +112,12 @@ body {
     object-fit: cover; /* Заполняет контейнер без деформации */
     display: block;
     border-radius: 10px 0 0 10px;
+    filter: brightness(90%);
   }
 
   .card {
     margin-top: 2rem;
+    padding: 0.5rem;
   }
 
   .type {
