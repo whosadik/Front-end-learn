@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--dream);
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--white);
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card {
+  margin: 1.5rem;
+}
+
+.type {
+  font-family: "Montserrat", serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+
+.heading {
+  color: var(--very-dark-blue);
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+}
+
+.card-text {
+  margin-top: 0.5rem;
+  font-family: "Montserrat", serif;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+
+.price {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.new-price {
+  font-size: 32px;
+  color: var(--dark-cyan);
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+}
+
+.old-price {
+  margin-left: 1rem;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-family: "Fraunces", serif;
+  color: var(--dark-grayish-blue);
+}
+
+.btn {
+  margin-top: 1rem;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  width: 10px;
+  height: 10px;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+  }
+
+  .image {
+    height: 100%; /* Занимает всю высоту контейнера */
+    object-fit: cover; /* Заполняет контейнер без деформации */
+    display: block;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card {
+    margin-top: 2rem;
+  }
+
+  .type {
+    font-size: 12px;
+  }
+
+  .heading {
+    margin-top: 1rem;
+  }
+
+  .card-text {
+    margin-top: 1rem;
+  }
+
+  .price {
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+
+  .cart {
+    width: 12px;
+    height: 12px;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: hsl(158, 34%, 25%);
+  }
+}
