@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", serif;
+}
+
+body {
+  background: url(images/bg-pattern-desktop.svg) center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  padding: 5rem 10rem;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.logo-container {
+  margin-bottom: 5rem;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 100vh;
+}
+
+.heading {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 600;
+}
+
+.heading span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.text {
+  margin-top: 1.5rem;
+  color: hsl(0, 36%, 70%);
+  line-height: 1.5rem;
+  width: 95%;
+}
+
+.enter {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+}
+
+.input-container {
+  position: relative; /* Устанавливаем контейнер для относительного позиционирования кнопки */
+  width: 100%; /* Занимает всю доступную ширину */
+  max-width: 100%; /* Ограничение максимальной ширины поля */
+}
+
+.input-container input {
+  width: 100%; /* Поле ввода занимает всю ширину контейнера */
+  padding: 15px 50px 15px 15px; /* Отступ для текста внутри инпута */
+  font-size: 16px;
+  border: 1px solid var(--Dark-Grayish-Red);
+  border-radius: 25px; /* Закруглённые края */
+  outline: none;
+  box-sizing: border-box;
+}
+
+.btn {
+  position: absolute;
+  right: 0rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5.5rem;
+  height: 100%;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.input {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.error-text {
+  display: none; /* Скрыто по умолчанию */
+  color: red; /* Цвет текста ошибки */
+  font-size: 14px; /* Размер текста ошибки */
+  margin-top: 1rem; /* Отступ от инпута */
+}
