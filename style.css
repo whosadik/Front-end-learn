@@ -1,0 +1,151 @@
+:root {
+  --Very-Dark: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+* {
+  font-family: "Manrope", serif;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: var(--Light-Grayish-Blue);
+  height: 90vh;
+}
+
+.container-image {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 15px 15px;
+}
+
+.card-elements {
+  padding: 2rem;
+}
+
+.heading {
+  font-size: 20px;
+  color: var(--Very-Dark);
+  font-weight: 700;
+}
+
+.text {
+  color: var(--Desaturated-Dark-Blue);
+}
+
+.profile-bottom {
+  padding: 1rem 2rem;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+
+.info {
+  display: flex;
+}
+
+.info-text {
+  line-height: 0.5rem;
+  margin-left: 1rem;
+}
+
+#toggleButton {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+#toggleButton img {
+  width: 20px;
+  height: 20px;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.share-bottom {
+  background-color: var(--Very-Dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0 0 15px 15px;
+  height: 3rem;
+}
+
+.share-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.share {
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color: var(--Grayish-Blue);
+}
+
+.hidden {
+  display: none;
+}
+
+.share-bottom #toggleButton {
+  color: var(--Very-Dark);
+}
+
+@media (min-width: 568px) {
+  .container {
+    max-width: 800px;
+    max-height: 300px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .container-image {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .card-elements {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .profile-bottom {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-top: 1rem;
+  }
+
+  .share-bottom {
+    border-radius: 0 15px 15px 0;
+  }
+}
