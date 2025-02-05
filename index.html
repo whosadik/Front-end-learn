@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <div class="container">
+      <div class="image">
+        <img
+          class="card-image"
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="Illustration-sign-up-mobile"
+        />
+      </div>
+
+      <div class="card">
+        <h1 class="heading">Stay updated!</h1>
+        <p class="card-text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <ul class="list">
+          <li class="list-item">Product discovery and building what matters</li>
+          <li class="list-item">Measuring to ensure updates are a success</li>
+          <li class="list-item">And much more!</li>
+        </ul>
+
+        <form id="form" target="_self">
+          <div class="email-text">
+            <p class="email-adress">Email address</p>
+            <p id="error-text" class="error-text">Valid email required</p>
+          </div>
+          <input
+            id="input"
+            type="email"
+            class="input"
+            placeholder="email@company.com "
+          />
+          <button id="btn" class="btn" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Success message end -->
+    <script src="index.js"></script>
+  </body>
+</html>
