@@ -5,18 +5,7 @@ This is a responsive news homepage project built with HTML, CSS, and Bootstrap. 
 ## 🔗 Live Preview
 
 [👉 View Live](#) (Add your link here)
-
----
-
-## 📸 Screenshots
-
-### Desktop Version
-
-<img src="screenshots/desktop.png" alt="Desktop screenshot" width="800" />
-
-### Mobile Version
-
-<img src="screenshots/mobile.png" alt="Mobile screenshot" width="400" />
+https://whosadik.github.io/News-Homepage/
 
 ---
 
