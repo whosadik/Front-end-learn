@@ -1,12 +1,93 @@
-# React + Vite
+Вот `README.md` для проекта **Testimonials-Slider** из твоего репозитория:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 💬 Testimonials Slider — Frontend Mentor Solution
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a responsive testimonial slider component built as part of a [Frontend Mentor challenge](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). The task was to create a clean and adaptive testimonial section with transitions and a focus on layout responsiveness.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔗 Live Preview
+
+👉 [View Live](https://whosadik.github.io/Testimonials-Slider/)
+
+---
+
+### 🚀 Features
+
+* Responsive grid layout
+* Testimonial card slider
+* Dynamic image and quote transitions
+* Clean typography and spacing
+* Hover effects on navigation buttons
+* Fully mobile-first design
+
+---
+
+### 🛠️ Technologies Used
+
+* HTML5
+* CSS3 (Grid, Flexbox, media queries)
+* JavaScript (for slider logic)
+* Google Fonts (for custom typography)
+
+---
+
+### 🧑‍💻 Getting Started
+
+```bash
+git clone https://github.com/whosadik/Front-end-learn.git
+cd Front-end-learn/Testimonials-Slider
+```
+
+Open `index.html` directly in your browser or use a local development server.
+
+---
+
+### 📁 Folder Structure
+
+```
+📦 Testimonials-Slider/
+ ┣ 📂 images/
+ ┃ ┗ 📜 profile photos, arrows, etc.
+ ┣ 📜 index.html
+ ┣ 📜 style.css
+ ┣ 📜 script.js
+ ┗ 📜 README.md
+```
+
+---
+
+### 🧠 What I Learned
+
+* Creating sliders with vanilla JavaScript
+* Positioning background elements responsively
+* Managing content transitions smoothly
+* CSS Grid vs Flexbox in component layout
+
+---
+
+### 📦 Possible Improvements
+
+* Add touch/drag support for mobile devices
+* Add auto-play with pause on hover
+* Use ARIA labels for improved accessibility
+* Improve transition animations
+
+---
+
+### 🙌 Acknowledgements
+
+* Challenge by [Frontend Mentor](https://www.frontendmentor.io/)
+* Design assets from the provided challenge starter files
+
+---
+
+### 📜 License
+
+MIT License
+
+---
+
+Хочешь — продолжим по другим проектам. Напиши путь следующего.
