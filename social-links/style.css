@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--grey-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 3rem auto;
+  padding: 2.5rem 2.5rem;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  background-color: var(--grey-800);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 1.5rem;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.location {
+  margin-top: 0.5rem;
+  color: var(--green);
+  font-weight: bold;
+}
+
+.proffession {
+  margin-top: 1.5rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.link {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--grey-700);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px; /* Размер текста */
+  font-weight: bold; /* Жирный текст */
+  display: flex; /* Flexbox для текста */
+  justify-content: center; /* Горизонтальное центрирование текста */
+  align-items: center; /* Вертикальное центрирование текста */
+  width: 100%; /* Ссылка занимает всю ширину кнопки */
+  height: 100%; /* Ссылка занимает всю высоту кнопки */
+}
+
+.link:hover,
+.link a:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+@media (min-width: 769px) and (max-width: 996px) {
+  body {
+    margin: 6rem 0;
+    padding: 1.5rem;
+  }
+  .container {
+    max-width: 600px;
+  }
+
+  .avatar {
+    max-width: 150px;
+  }
+
+  .name {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .link {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link a {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    margin: 6rem 0;
+    padding: 1.5rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  .link {
+    height: 2.5rem;
+  }
+}
