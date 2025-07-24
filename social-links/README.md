@@ -1,6 +1,7 @@
 # Frontend Mentor - Social links profile
 
 ![Design preview for the Social links profile coding challenge](./preview.jpg)
+https://whosadik.github.io/social-links/
 
 ## Welcome! 👋
 
