@@ -1,6 +1,7 @@
 # Frontend Mentor - Recipe page
 
 ![Design preview for the Recipe page coding challenge](./preview.jpg)
+https://whosadik.github.io/recipe--page/
 
 ## Welcome! 👋
 
