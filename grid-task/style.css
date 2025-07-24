@@ -1,0 +1,136 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: var(--Very-Light-Gray);
+  padding: 4rem 2rem;
+  height: 100vh;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.light-heading {
+  font-weight: 200;
+  font-size: 25px;
+  color: var(--Very-Dark-Blue);
+}
+
+.bold-heading {
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--Very-Dark-Blue);
+}
+
+.text {
+  font-size: 15px;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
+
+.cards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: start;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.136);
+}
+
+.card-heading {
+  color: var(--Very-Dark-Blue);
+}
+
+.card-text {
+  margin-top: 0.5rem;
+  text-align: left;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--Grayish-Blue);
+}
+
+.card .card-image {
+  margin-top: 2rem;
+  align-self: flex-end;
+}
+
+#card-1 {
+  border-top: 5px solid var(--Cyan);
+}
+#card-2 {
+  border-top: 5px solid var(--Red);
+}
+
+#card-3 {
+  border-top: 5px solid var(--Orange);
+}
+
+#card-4 {
+  border-top: 5px solid var(--Blue);
+}
+
+@media (min-width: 768px) {
+  .heading {
+    max-width: 600px;
+  }
+  .light-heading {
+    font-size: 38px;
+  }
+  .bold-heading {
+    font-size: 38px;
+  }
+  .cards {
+    margin-top: 12rem;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Сетка на 4 столбца */
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #card-3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    transform: translateY(-50%);
+  }
+
+  #card-2 {
+    transform: translateY(-60%);
+  }
+}
