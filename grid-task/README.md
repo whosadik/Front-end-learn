@@ -1,6 +1,7 @@
 # Frontend Mentor - Four card feature section
 
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
+https://whosadik.github.io/grid-task/
 
 ## Welcome! 👋
 
