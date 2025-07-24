@@ -1,7 +1,7 @@
 # Frontend Mentor - Article preview component
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
-
+https://whosadik.github.io/artice-preview/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
