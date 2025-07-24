@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div id="cards">
+      <div class="main-card">
+        <div class="info">
+          <img
+            src="images/image-jeremy.png"
+            alt="Jeremy icon"
+            class="profile-image"
+          />
+          <div class="profile-about">
+            <div class="report-for">Report for</div>
+            <div class="name">Jeremy Robson</div>
+          </div>
+        </div>
+        <div class="pages">
+          <button class="btn-daily" data-period="daily">Daily</button>
+          <button class="btn-weekly active" data-period="weekly">Weekly</button>
+          <button class="btn-monthly" data-period="monthly">Monthly</button>
+        </div>
+      </div>
+
+      <div class="card" id="card1">
+        <div class="card-top"></div>
+        <div class="card-text">
+          <div class="card-title">Work</div>
+          <div class="card-time">32hrs</div>
+          <div class="more">...</div>
+          <div class="card-time-previous">Last Week - 36hrs</div>
+        </div>
+      </div>
+      <div class="card" id="card2">
+        <div class="card-top"></div>
+        <div class="card-text">
+          <div class="card-title">Play</div>
+          <div class="card-time">10hrs</div>
+          <div class="more">...</div>
+          <div class="card-time-previous">Last Week - 8hrs</div>
+        </div>
+      </div>
+      <div class="card" id="card3">
+        <div class="card-top"></div>
+        <div class="card-text">
+          <div class="card-title">Study</div>
+          <div class="card-time">4hrs</div>
+          <div class="more">...</div>
+          <div class="card-time-previous">Last Week - 7hrs</div>
+        </div>
+      </div>
+      <div class="card" id="card4">
+        <div class="card-top"></div>
+        <div class="card-text">
+          <div class="card-title">Exercise</div>
+          <div class="card-time">4hrs</div>
+          <div class="more">...</div>
+          <div class="card-time-previous">Last Week - 5hrs</div>
+        </div>
+      </div>
+      <div class="card" id="card5">
+        <div class="card-top"></div>
+        <div class="card-text">
+          <div class="card-title">Social</div>
+          <div class="card-time">5hrs</div>
+          <div class="more">...</div>
+          <div class="card-time-previous">Last Week - 10hrs</div>
+        </div>
+      </div>
+      <div class="card" id="card6">
+        <div class="card-top"></div>
+        <div class="card-text">
+          <div class="card-title">Self Car</div>
+          <div class="card-time">2hrs</div>
+          <div class="more">...</div>
+          <div class="card-time-previous">Last Week - 2hrs</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
